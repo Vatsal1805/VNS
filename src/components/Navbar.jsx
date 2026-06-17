@@ -48,10 +48,14 @@ export default function Navbar() {
             <img src={logoImg} alt="VNS Logo" className="w-full h-full object-contain" />
           </div>
           <div className="flex flex-col">
-            <span className="font-heading text-lg font-bold text-vnsDark tracking-wide leading-tight group-hover:text-vnsAccent transition-colors duration-200">
+            <span className={`font-heading text-lg font-bold tracking-wide leading-tight group-hover:text-vnsAccent transition-colors duration-200 ${
+              isScrolled ? 'text-vnsDark' : 'text-vnsText-primary'
+            }`}>
               VNS
             </span>
-            <span className="font-body text-[10px] text-vnsDark/70 tracking-widest uppercase leading-none font-bold">
+            <span className={`font-body text-[10px] tracking-widest uppercase leading-none font-bold ${
+              isScrolled ? 'text-vnsDark/70' : 'text-vnsText-secondary'
+            }`}>
               Boys Hostel
             </span>
           </div>
@@ -65,7 +69,9 @@ export default function Navbar() {
                 <a
                   key={link.name}
                   href={link.path}
-                  className="font-body text-sm font-semibold text-vnsDark/80 hover:text-vnsDark transition-colors duration-200"
+                  className={`font-body text-sm font-semibold transition-colors duration-200 ${
+                    isScrolled ? 'text-vnsDark/80 hover:text-vnsDark' : 'text-vnsText-secondary hover:text-vnsText-primary'
+                  }`}
                 >
                   {link.name}
                 </a>
@@ -76,8 +82,10 @@ export default function Navbar() {
                 key={link.name}
                 to={link.path}
                 className={({ isActive }) =>
-                  `font-body text-sm font-semibold transition-colors duration-200 hover:text-vnsDark ${
-                    isActive ? 'text-vnsDark border-b-2 border-vnsDark pb-1' : 'text-vnsDark/80'
+                  `font-body text-sm font-semibold transition-colors duration-200 ${
+                    isScrolled 
+                      ? (isActive ? 'text-vnsDark border-b-2 border-vnsDark pb-1' : 'text-vnsDark/80 hover:text-vnsDark')
+                      : (isActive ? 'text-[#F5EDD8] border-b-2 border-[#F5EDD8] pb-1' : 'text-[#D7C2B8] hover:text-[#F5EDD8]')
                   }`
                 }
               >
@@ -90,16 +98,24 @@ export default function Navbar() {
         {/* Desktop CTA Button */}
         <button
           onClick={handleWhatsAppClick}
-          className="hidden md:flex items-center gap-2 bg-vnsDark hover:bg-[#4E2813] text-vnsText-primary px-5 py-2.5 rounded-vns border border-vnsDark shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-200"
+          className={`hidden md:flex items-center gap-2 px-5 py-2.5 rounded-vns shadow-sm hover:scale-[1.02] active:scale-[0.98] transition-all duration-200 ${
+            isScrolled
+              ? 'bg-vnsDark text-[#F5EDD8] border border-vnsDark hover:bg-[#4E2813]'
+              : 'bg-vnsAccent text-vnsBg border border-vnsAccent hover:bg-[#D4A853]'
+          }`}
         >
-          <MessageCircle className="w-4 h-4 text-vnsAccent fill-current" />
+          <MessageCircle className={`w-4 h-4 fill-current ${isScrolled ? 'text-vnsAccent' : 'text-vnsBg'}`} />
           <span className="font-heading text-xs font-semibold uppercase tracking-wider">Book A Visit</span>
         </button>
 
         {/* Mobile Burger Toggle */}
         <button
           onClick={() => setIsMenuOpen(!isMenuOpen)}
-          className="md:hidden text-vnsDark p-2 border border-vnsDark/10 rounded-vns hover:bg-vnsDark/5 transition-colors"
+          className={`md:hidden p-2 border rounded-vns hover:bg-vnsDark/5 transition-colors ${
+            isScrolled 
+              ? 'text-vnsDark border-vnsDark/10' 
+              : 'text-vnsText-primary border-vnsText-primary/20'
+          }`}
         >
           {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
         </button>
@@ -145,7 +161,7 @@ export default function Navbar() {
               setIsMenuOpen(false);
               handleWhatsAppClick();
             }}
-            className="flex items-center justify-center gap-2 bg-vnsDark text-vnsText-primary py-3 rounded-vns border border-vnsDark shadow-md mt-2"
+            className="flex items-center justify-center gap-2 bg-vnsDark text-[#F5EDD8] py-3 rounded-vns border border-vnsDark shadow-md mt-2"
           >
             <MessageCircle className="w-5 h-5 text-vnsAccent fill-current" />
             <span className="font-heading font-semibold tracking-wider uppercase">Book A Visit</span>
