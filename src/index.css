@@ -1,0 +1,75 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap');
+
+@import "tailwindcss";
+
+@theme {
+  --color-vnsBg: #351C0E;
+  --color-vnsSurface: #27140B;
+  --color-vnsCardHover: #3C2012;
+  --color-vnsPrimary: #351C0E;
+  --color-vnsAccent: #C9933A;
+  --color-vnsBtnHover: #D4A853;
+  --color-vnsText-primary: #F5EDD8;
+  --color-vnsText-secondary: #D7C2B8;
+  --color-vnsBorder: rgba(201, 147, 58, 0.15);
+  
+  --color-vnsLight: #EAD5C3;
+  --color-vnsDark: #351C0E;
+  
+  --font-heading: Outfit, sans-serif;
+  --font-body: "Plus Jakarta Sans", sans-serif;
+  
+  --border-radius-vns: 8px;
+}
+
+@layer base {
+  body {
+    @apply bg-vnsBg text-vnsText-primary font-body antialiased selection:bg-vnsAccent selection:text-vnsBg;
+    margin: 0;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading tracking-wide;
+  }
+}
+
+/* Optimize and enhance background image rendering */
+.hero-bg-enhanced {
+  image-rendering: -webkit-optimize-contrast;
+  image-rendering: crisp-edges;
+  filter: contrast(1.12) saturate(1.08) brightness(0.96);
+}
+
+/* Premium Dot Pattern Overlay to mask low-res blur */
+.bg-dot-pattern {
+  background-image: radial-gradient(rgba(53, 28, 14, 0.15) 1px, transparent 1px);
+  background-size: 6px 6px;
+}
+
+/* Custom scrollbar to match dark-gold theme */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F0B08;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1A1208;
+  border: 1px solid rgba(201, 147, 58, 0.15);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #5C2D0E;
+}
+
+iframe {
+  border: none;
+}
+
+.max-width-container {
+  max-width: 1280px;
+  width: 100%;
+}
