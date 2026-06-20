@@ -56,7 +56,8 @@ export default function CommuteTestimonials({
               height="100%"
               style={{ border: 0, pointerEvents: 'none' }}
               loading="lazy"
-              src="https://maps.google.com/maps?q=VNS%20Boys%20Hostel,%20Waghodia%20Road,%20Vadodara,%20Gujarat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              // src="https://maps.google.com/maps?q=VNS%20Boys%20Hostel,%20Waghodia%20Road,%20Vadodara,%20Gujarat&t=&z=15&ie=UTF8&iwloc=&output=embed"
+               src="https://maps.app.goo.gl/b7tUuZMKSEuZ5SCy8"
             ></iframe>
             <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
             <div className="absolute top-3 left-3 bg-vnsBg/90 backdrop-blur-sm border border-vnsAccent/30 px-3 py-1 rounded-vns text-[10px] text-vnsText-primary font-heading font-semibold shadow-sm transition-transform group-hover:scale-105">
