@@ -50,11 +50,6 @@ export default function RoomsPreview({
                   alt={room.name} 
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
-                {/* Absolute price badge */}
-                <div className="absolute bottom-4 left-4 bg-vnsBg border border-vnsAccent/40 text-vnsText-primary px-3 py-1 rounded-vns shadow-md">
-                  <p className="font-heading text-[10px] text-vnsAccent font-semibold leading-none">Starting from</p>
-                  <p className="font-heading text-lg font-bold text-vnsText-primary leading-none mt-1">₹{room.price}<span className="text-xs font-normal text-vnsText-secondary font-body">/mo</span></p>
-                </div>
               </div>
 
               {/* Card Content */}

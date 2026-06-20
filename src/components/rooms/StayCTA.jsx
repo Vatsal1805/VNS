@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle, Phone, AlertTriangle } from 'lucide-react';
 
 export default function StayCTA({ 
   contactInfo, 
@@ -38,8 +38,9 @@ export default function StayCTA({
               <span>Call Warden Uncle</span>
             </a>
           </div>
-          <p className="font-body text-[10px] text-vnsText-secondary uppercase tracking-widest mt-2 animate-pulse">
-            ⚠️ Limited Seats remaining for the upcoming semester
+          <p className="font-body text-[10px] text-vnsAccent uppercase tracking-widest mt-2 flex items-center justify-center gap-1.5 animate-pulse font-semibold">
+            <AlertTriangle className="w-3.5 h-3.5 text-vnsAccent" />
+            <span>Limited Seats remaining for the upcoming semester</span>
           </p>
         </motion.div>
       </div>

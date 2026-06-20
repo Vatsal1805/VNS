@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function GalleryHero({ facadeImg }) {
   return (
-    <section className="relative min-h-[75vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <section className="relative min-h-[65vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Cinematic Ken Burns Background Zoom */}
       <div className="absolute inset-0 z-0">
         <motion.div 

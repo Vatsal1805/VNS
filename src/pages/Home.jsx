@@ -102,14 +102,14 @@ export default function Home() {
         containerVariants={containerVariants} 
         itemVariants={itemVariants} 
       />
+        <FacilitiesGrid 
+          amenitiesList={AMENITIES_LIST} 
+        />
       <BentoSection 
         bentoCommute={BENTO_COMMUTE} 
         celebrationTags={CELEBRATION_TAGS} 
         valueInclusions={VALUE_INCLUSIONS} 
-      />
-      <FacilitiesGrid 
-        amenitiesList={AMENITIES_LIST} 
-      />
+        />
       <LifeAtVns 
         lobbyImg={lobbyImg} 
         sportsImg={sportsImg} 

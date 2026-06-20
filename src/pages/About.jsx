@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { CONTACT_INFO, facadeImg, sportsImg, diningImg } from '../config';
 import { CORE_VALUES, ENV_TABS, TARGET_COLLEGES } from '../data/aboutData';
 import AboutHero from '../components/about/AboutHero';
+import OurMission from '../components/about/OurMission';
 import CoreValues from '../components/about/CoreValues';
 import AboutLeadership from '../components/about/AboutLeadership';
 import HostelEnvironment from '../components/about/HostelEnvironment';
@@ -67,7 +68,10 @@ export default function About() {
       {/* 1. HERO SECTION */}
       <AboutHero facadeImg={facadeImg} />
 
-      {/* 2. CORE VALUES */}
+      {/* 2. OUR MISSION */}
+      <OurMission textEntranceVariants={textEntranceVariants} />
+
+      {/* 3. CORE VALUES */}
       <CoreValues 
         coreValues={CORE_VALUES}
         containerVariants={containerVariants}

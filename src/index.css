@@ -19,7 +19,14 @@
   --font-heading: Outfit, sans-serif;
   --font-body: "Plus Jakarta Sans", sans-serif;
   
-  --border-radius-vns: 8px;
+  --radius-vns: 20px;
+
+  --animate-marquee: marquee 35s linear infinite;
+
+  @keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-50%); }
+  }
 }
 
 @layer base {

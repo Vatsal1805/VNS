@@ -60,7 +60,6 @@ export default function Gallery() {
       <Lightbox 
         lightboxIndex={lightboxIndex}
         filteredPhotos={filteredPhotos}
-        filterTabs={FILTER_TABS}
         closeLightbox={closeLightbox}
         prevPhoto={prevPhoto}
         nextPhoto={nextPhoto}

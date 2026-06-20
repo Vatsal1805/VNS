@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { MessageCircle, Phone, User, MapPin, Mail } from 'lucide-react';
+import { MessageCircle, Phone, User, MapPin, Mail, AlertCircle } from 'lucide-react';
 
 export default function WhatsAppWizard({ 
   contactInfo, 
@@ -80,8 +80,9 @@ export default function WhatsAppWizard({
                           />
                         </div>
                         {wizardError && (
-                          <p className="text-[10px] font-heading font-semibold text-rose-700 uppercase tracking-wide animate-pulse">
-                            ⚠️ {wizardError}
+                          <p className="text-[10px] font-heading font-semibold text-rose-700 uppercase tracking-wide flex items-center gap-1.5 animate-pulse">
+                            <AlertCircle className="w-3.5 h-3.5 text-rose-700" />
+                            <span>{wizardError}</span>
                           </p>
                         )}
                       </div>
@@ -221,7 +222,7 @@ export default function WhatsAppWizard({
                   <span>Call Warden Uncle</span>
                 </a>
                 <p className="font-body text-[9px] text-vnsText-secondary text-center uppercase tracking-widest mt-1">
-                  ⏰ Office Hours: 8:00 AM - 10:00 PM
+                   Office Hours: 8:00 AM - 10:00 PM
                 </p>
               </div>
             </div>

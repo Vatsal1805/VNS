@@ -26,19 +26,19 @@ export const ENV_TABS = (facadeImg, diningImg, sportsImg) => [
     title: "Cooler Interiors",
     desc: "Built with 10ft+ high ceilings that allow hot air to rise, keeping rooms naturally cooler during summer.",
     image: facadeImg,
-    badge: "❄️ Smart Architecture"
+    badge: "Smart Architecture"
   },
   {
     title: "Hygienic RO Grid",
     desc: "Centralized commercial RO filtration plants installed on every floor, tested monthly for absolute purity.",
     image: diningImg,
-    badge: "💧 Pure Drinking Water"
+    badge: "Pure Drinking Water"
   },
   {
     title: "Sports & Recreation",
     desc: "Open spaces and play areas that encourage physical fitness, bonding, and healthy relaxation after study hours.",
     image: sportsImg,
-    badge: "⚽ Active Student Life"
+    badge: "Active Student Life"
   }
 ];
 

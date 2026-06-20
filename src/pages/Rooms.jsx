@@ -1,9 +1,9 @@
-import { CONTACT_INFO, ROOMS_DATA, facadeImg, lobbyImg, holiImg, diningImg } from '../config';
+import { CONTACT_INFO, ROOMS_DATA, facadeImg } from '../config';
 import { TIMELINE_STEPS } from '../data/roomsData';
 import RoomsHero from '../components/rooms/RoomsHero';
 import RoomsGrid from '../components/rooms/RoomsGrid';
 import StayInclusions from '../components/rooms/StayInclusions';
-import RoomsMatrix from '../components/rooms/RoomsMatrix';
+
 import ViewGalleryCTA from '../components/rooms/ViewGalleryCTA';
 import StayConfirmTimeline from '../components/rooms/StayConfirmTimeline';
 import StayCTA from '../components/rooms/StayCTA';
@@ -72,8 +72,6 @@ export default function Rooms() {
       <RoomsGrid 
         roomsData={ROOMS_DATA}
         handleWhatsAppInquiry={handleWhatsAppInquiry}
-        containerVariants={containerVariants}
-        itemVariants={itemVariants}
       />
 
       {/* 3. INCLUDED WITH EVERY STAY */}
@@ -82,14 +80,10 @@ export default function Rooms() {
         rightSlideVariants={rightSlideVariants}
       />
 
-      {/* 4. COMPARE ROOM OPTIONS */}
-      <RoomsMatrix textEntranceVariants={textEntranceVariants} />
+
 
       {/* 5. VIEW GALLERY CTA */}
       <ViewGalleryCTA 
-        lobbyImg={lobbyImg}
-        holiImg={holiImg}
-        diningImg={diningImg}
         textEntranceVariants={textEntranceVariants}
       />
 

@@ -43,21 +43,29 @@ export default function CommuteTestimonials({
             </h2>
           </motion.div>
           
-          {/* Live Interactive Google Map */}
-          <div className="relative w-full h-[320px] rounded-vns overflow-hidden border border-vnsDark/10 shadow-md">
+          {/* Live Clickable Google Map */}
+          <a 
+            href={contactInfo.googleMapsLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="relative block w-full h-[320px] rounded-vns overflow-hidden border border-vnsDark/10 shadow-md group cursor-pointer"
+          >
             <iframe
               title="VNS Hostel Location Map"
               width="100%"
               height="100%"
-              style={{ border: 0 }}
+              style={{ border: 0, pointerEvents: 'none' }}
               loading="lazy"
-              allowFullScreen
               src="https://maps.google.com/maps?q=VNS%20Boys%20Hostel,%20Waghodia%20Road,%20Vadodara,%20Gujarat&t=&z=15&ie=UTF8&iwloc=&output=embed"
             ></iframe>
-            <div className="absolute top-3 left-3 bg-vnsBg/90 backdrop-blur-sm border border-vnsAccent/30 px-3 py-1 rounded-vns text-[10px] text-vnsText-primary font-heading font-semibold shadow-sm pointer-events-none">
-              📍 VNS Boys Hostel Location
+            <div className="absolute inset-0 bg-black/0 group-hover:bg-black/5 transition-colors duration-300"></div>
+            <div className="absolute top-3 left-3 bg-vnsBg/90 backdrop-blur-sm border border-vnsAccent/30 px-3 py-1 rounded-vns text-[10px] text-vnsText-primary font-heading font-semibold shadow-sm transition-transform group-hover:scale-105">
+               VNS Boys Hostel Location
             </div>
-          </div>
+            <div className="absolute bottom-3 right-3 bg-vnsAccent text-vnsBg px-3.5 py-1.5 rounded-vns text-[10px] font-heading font-bold shadow-md transition-all group-hover:scale-105 group-hover:bg-vnsBtnHover flex items-center gap-1">
+               Open in Google Maps ↗
+            </div>
+          </a>
 
           {/* Landmark Cards 2x2 Grid */}
           <motion.div 

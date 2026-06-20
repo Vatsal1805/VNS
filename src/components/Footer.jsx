@@ -37,7 +37,7 @@ export default function Footer() {
               <Link to="/about" className="hover:text-vnsAccent transition-colors">About Us</Link>
             </li>
             <li>
-              <Link to="/rooms" className="hover:text-vnsAccent transition-colors">Rooms & Pricing</Link>
+              <Link to="/rooms" className="hover:text-vnsAccent transition-colors">Rooms</Link>
             </li>
             <li>
               <a href="/#life-at-vns" className="hover:text-vnsAccent transition-colors">Life At VNS</a>

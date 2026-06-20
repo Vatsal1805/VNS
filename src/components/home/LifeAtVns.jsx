@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion';
-import { ArrowRight } from 'lucide-react';
+import { CheckCircle } from 'lucide-react';
 
 export default function LifeAtVns({ 
   lobbyImg, 
@@ -82,7 +82,7 @@ export default function LifeAtVns({
             <ul className="flex flex-col gap-4">
               {communityHighlights.map((activity, idx) => (
                 <li key={idx} className="flex gap-3 items-center text-sm font-semibold text-vnsDark/80">
-                  <ArrowRight className="w-4 h-4 text-vnsDark shrink-0" />
+                  <CheckCircle className="w-5 h-5 text-vnsDark/80 shrink-0" />
                   <span>{activity}</span>
                 </li>
               ))}

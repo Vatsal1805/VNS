@@ -2,7 +2,7 @@ import { motion } from 'framer-motion';
 
 export default function RoomsHero({ facadeImg }) {
   return (
-    <section className="relative min-h-[50vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
+    <section className="relative min-h-[65vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       <div className="absolute inset-0 z-0">
         <motion.div 
           className="absolute inset-0 bg-cover bg-center hero-bg-enhanced"
@@ -41,7 +41,7 @@ export default function RoomsHero({ facadeImg }) {
           transition={{ type: "spring", stiffness: 50, damping: 14, delay: 0.3 }}
           className="font-body text-sm sm:text-base text-vnsText-secondary max-w-2xl leading-relaxed"
         >
-          All-inclusive comfortable living with transparent pricing, individual study spaces, and split AC units in all sharing options.
+          All-inclusive comfortable living with modern amenities, individual study spaces, and split AC units in all sharing options.
         </motion.p>
       </div>
     </section>

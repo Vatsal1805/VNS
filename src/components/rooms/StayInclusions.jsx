@@ -9,10 +9,10 @@ export default function StayInclusions({ leftSlideVariants, rightSlideVariants }
         <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-2">
           <span className="font-heading text-xs font-semibold uppercase tracking-widest text-vnsAccent">Campus Transparency</span>
           <h2 className="font-heading text-3xl font-bold uppercase tracking-tight text-vnsText-primary">
-            Rent Breakdown & Policies
+            Inclusions & Policies
           </h2>
           <p className="font-body text-xs text-vnsText-secondary leading-relaxed mt-1">
-            We maintain absolute transparency. Here is exactly what is covered in your monthly rent and what is billed separately.
+            We maintain absolute transparency. Here is exactly what is covered in your stay and what is billed separately.
           </p>
         </div>
 
@@ -28,7 +28,7 @@ export default function StayInclusions({ leftSlideVariants, rightSlideVariants }
           >
             <h4 className="font-heading font-bold text-vnsText-primary text-lg uppercase tracking-wider border-b border-vnsBorder/40 pb-3 flex items-center gap-2">
               <Shield className="w-5 h-5 text-vnsAccent" />
-              Included In Rent
+              Included In Stay
             </h4>
             <ul className="flex flex-col gap-3 text-xs text-vnsText-secondary">
               <li className="flex gap-3 items-center">
@@ -74,7 +74,7 @@ export default function StayInclusions({ leftSlideVariants, rightSlideVariants }
               <div className="bg-vnsBg/50 border border-vnsBorder p-4 rounded-vns">
                 <h5 className="font-heading font-semibold text-xs text-vnsAccent uppercase tracking-wider">Why we do this:</h5>
                 <p className="font-body text-[11px] text-vnsText-secondary leading-relaxed mt-1">
-                  This stops students who don't use AC from subsidizing the bills of students who leave ACs running 24/7. It encourages energy saving and guarantees fair pricing.
+                  This stops students who don't use AC from subsidizing the bills of students who leave ACs running 24/7. It encourages energy saving and guarantees fair costs.
                 </p>
               </div>
             </div>

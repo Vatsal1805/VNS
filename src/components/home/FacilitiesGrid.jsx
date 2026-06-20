@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import DynamicIcon from '../DynamicIcon';
+import logoImg from '../../assets/logo.png';
 
 export default function FacilitiesGrid({ amenitiesList }) {
   return (
@@ -51,10 +52,7 @@ export default function FacilitiesGrid({ amenitiesList }) {
 
           {/* Row 2 - Columns 2, 3 & 4 (Merged center card) */}
           <div className="bg-gradient-to-br from-vnsPrimary/85 to-[#2A1608]/95 border border-vnsAccent rounded-vns p-4 md:p-6 flex flex-col items-center justify-center text-center shadow-lg min-h-[140px] md:min-h-[180px] md:col-span-3 col-span-2">
-            <svg viewBox="0 0 24 24" className="w-8 h-8 md:w-12 md:h-12 text-vnsAccent fill-current mb-2 md:mb-3">
-              <path d="M12 2C11.5 2 6 4 6 9c0 5.5 4.5 9.5 5.7 10.7.2.2.4.3.3.3s.1-.1.3-.3C13.5 18.5 18 14.5 18 9c0-5-5.5-7-6-7zm0 15c-3.1-2.9-6-6.6-6-9 0-3.1 3-4.4 6-5.1 3 .7 6 2 6 5.1 0 2.4-2.9 6.1-6 9z" />
-              <path d="M12 6a3 3 0 100 6 3 3 0 000-6z" />
-            </svg>
+            <img src={logoImg} alt="VNS Logo" className="w-10 h-10 md:w-14 md:h-14 object-contain mb-2 md:mb-3" />
             <h3 className="font-heading text-sm md:text-lg font-bold text-vnsText-primary uppercase tracking-wider">Amenities By VNS</h3>
             <p className="font-body text-[9px] md:text-[10px] text-vnsAccent tracking-widest uppercase mt-0.5 md:mt-1">Curated For Student Life</p>
           </div>
