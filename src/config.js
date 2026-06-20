@@ -16,7 +16,7 @@ export const CONTACT_INFO = {
   whatsappFormatted: "+91 84870 45600",
   email: "info@vnshostel.com",
   address: "Alwa Road, opp. Vadpadraka Hotel & Resort, between Sumandeep and Parul University, Dattapura, Waghodia Rd, Vadodara, Gujarat 391760",
-  googleMapsLink: "https://maps.app.goo.gl/uX3QdG9x9qD3g6m5A",
+  googleMapsLink: "https://www.google.com/maps/search/?api=1&query=VNS+Boys+Hostel+Waghodia+Road+Vadodara+Gujarat+391760",
 };
 
 export const GOOGLE_RATING = {
