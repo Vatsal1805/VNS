@@ -1,6 +1,7 @@
 import { 
   CONTACT_INFO, GOOGLE_RATING, ROOMS_DATA, AMENITIES_LIST, GOOGLE_REVIEWS,
-  facadeImg, lobbyImg, sportsImg, holiImg, thaliImg, diningImg
+  facadeImg, hostelHeroImg, lobbyImg, receptionImg, gardenArea1, gardenArea2, gardenImg,
+  sportsImg, holiImg, thaliImg, diningImg, corridorImg
 } from '../config';
 import { 
   BENTO_COMMUTE, CELEBRATION_TAGS, VALUE_INCLUSIONS, FOOD_TIMINGS, 
@@ -91,8 +92,8 @@ export default function Home() {
       />
       <AboutSnippet 
         facadeImg={facadeImg} 
-        lobbyImg={lobbyImg} 
-        sportsImg={sportsImg} 
+        lobbyImg={receptionImg} 
+        sportsImg={gardenArea1} 
         leftSlideVariants={leftSlideVariants} 
         rightSlideVariants={rightSlideVariants} 
       />
@@ -111,7 +112,7 @@ export default function Home() {
         valueInclusions={VALUE_INCLUSIONS} 
         />
       <LifeAtVns 
-        lobbyImg={lobbyImg} 
+        lobbyImg={gardenImg} 
         sportsImg={sportsImg} 
         holiImg={holiImg} 
         diningImg={diningImg} 

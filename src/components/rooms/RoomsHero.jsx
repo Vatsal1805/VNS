@@ -23,7 +23,7 @@ export default function RoomsHero({ facadeImg }) {
           transition={{ type: "spring", stiffness: 70, damping: 15 }}
           className="text-xs lg:text-sm font-semibold tracking-widest text-vnsAccent uppercase border border-vnsAccent/20 bg-vnsAccent/5 px-4 py-1.5 rounded-full"
         >
-          Premium Accommodations
+          Fully Furnished • All-Inclusive
         </motion.span>
 
         <motion.h1 
@@ -41,7 +41,7 @@ export default function RoomsHero({ facadeImg }) {
           transition={{ type: "spring", stiffness: 50, damping: 14, delay: 0.3 }}
           className="font-body text-sm sm:text-base text-vnsText-secondary max-w-2xl leading-relaxed"
         >
-          All-inclusive comfortable living with modern amenities, individual study spaces, and split AC units in all sharing options.
+          Comfortable, fully furnished rooms designed for student living — with modern amenities, individual study spaces, nutritious meals, and round-the-clock security all included.
         </motion.p>
       </div>
     </section>

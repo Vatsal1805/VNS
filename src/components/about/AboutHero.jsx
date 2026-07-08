@@ -25,7 +25,7 @@ export default function AboutHero({ facadeImg }) {
           transition={{ duration: 0.6 }}
           className="text-xs lg:text-sm font-semibold tracking-widest text-vnsAccent uppercase border border-vnsAccent/20 bg-vnsAccent/5 px-4 py-1.5 rounded-full"
         >
-          Established 2013
+          Established 2015
         </motion.span>
 
         <motion.h1 
@@ -43,7 +43,7 @@ export default function AboutHero({ facadeImg }) {
           transition={{ duration: 0.8, delay: 0.35 }}
           className="font-body text-sm sm:text-base text-vnsText-secondary max-w-xl leading-relaxed"
         >
-          Over a decade of providing dedicated hostel housing for students to live, eat, celebrate, and study in Vadodara.
+          Founded in 2015 near Parul University, VNS Hostel has become a trusted choice for students and parents seeking quality accommodation with modern amenities and dependable management.
         </motion.p>
       </div>
     </section>

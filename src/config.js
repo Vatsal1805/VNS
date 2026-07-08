@@ -1,13 +1,69 @@
 // Configuration file for VNS Boys Hostel content and settings
-import doubleNonAcImg from './assets/WhatsApp Image 2026-06-16 at 2.54.41 PM.jpeg';
-import kitchenImg from './assets/WhatsApp Image 2026-06-16 at 2.54.56 PM.jpeg';
-import diningImg from './assets/WhatsApp Image 2026-06-16 at 2.55.04 PM.jpeg';
-import doubleAcImg from './assets/WhatsApp Image 2026-06-16 at 2.55.12 PM.jpeg';
-import lobbyImg from './assets/WhatsApp Image 2026-06-16 at 2.55.28 PM.jpeg';
-import sportsImg from './assets/WhatsApp Image 2026-06-16 at 2.55.41 PM.jpeg';
-import holiImg from './assets/WhatsApp Image 2026-06-16 at 2.55.50 PM.jpeg';
-import thaliImg from './assets/WhatsApp Image 2026-06-16 at 2.56.08 PM.jpeg';
-import facadeImg from './assets/hostel hero.png';
+
+// ─── Hero & Facade ──────────────────────────────────────────────────────────
+import facadeImg from './assets/Vraj nidhi samanvay/hostel hero.webp';
+import hostelFront10 from './assets/Vraj nidhi samanvay/hostel front 1.0.webp';
+import hostelHeroImg from './assets/Vraj nidhi samanvay/hostel hero.webp';
+import droneViewImg from './assets/Vraj nidhi samanvay/hostel view from drone(height).webp';
+import hostelFront4 from './assets/Vraj nidhi samanvay/hostel front 4.webp';
+
+// ─── Rooms ───────────────────────────────────────────────────────────────────
+import doubleNonAcImg from './assets/Vraj nidhi samanvay/Rooms.webp';
+import doubleAcImg from './assets/Vraj nidhi samanvay/rooms_2.webp';
+import roomsToiletImg from './assets/Vraj nidhi samanvay/rooms_toilet.webp';
+import rooms3Img from './assets/Vraj nidhi samanvay/rooms 3.webp';
+
+// ─── Mess & Food ─────────────────────────────────────────────────────────────
+import diningImg from './assets/Vraj nidhi samanvay/Mess_dinning  hall.webp';
+import messEntryImg from './assets/Vraj nidhi samanvay/mess entry.webp';
+import thaliImg from './assets/Vraj nidhi samanvay/food.webp';
+import foodProcessImg from './assets/Vraj nidhi samanvay/food process.webp';
+import kitchenImg from './assets/Vraj nidhi samanvay/roti(food) making process.webp';
+
+// ─── Garden & Campus ─────────────────────────────────────────────────────────
+import gardenArea1 from './assets/Vraj nidhi samanvay/Garden area_1.webp';
+import gardenArea2 from './assets/Vraj nidhi samanvay/Garden area_2.webp';
+import gardenArea3 from './assets/Vraj nidhi samanvay/garden area_3.webp';
+import garden10 from './assets/Vraj nidhi samanvay/garden 1.0.webp';
+import gardenTopView from './assets/Vraj nidhi samanvay/garden top view.webp';
+import gardenTopView10 from './assets/Vraj nidhi samanvay/garden top view1.0.webp';
+import gardenImg from './assets/Vraj nidhi samanvay/garden.webp';
+
+// ─── Lobby & Reception ───────────────────────────────────────────────────────
+import lobbyImg from './assets/Vraj nidhi samanvay/Office_with students.webp';
+import receptionImg from './assets/Vraj nidhi samanvay/reception office or manager offcie.webp';
+
+// ─── Corridor & Study ────────────────────────────────────────────────────────
+import corridorImg from './assets/Vraj nidhi samanvay/coridor area 1.0.webp';
+import hostelCorridorImg from './assets/Vraj nidhi samanvay/hostel coridor area.webp';
+import studyRoomImg from './assets/Vraj nidhi samanvay/study room.webp';
+
+// ─── Security ────────────────────────────────────────────────────────────────
+import securityOfficeImg from './assets/Vraj nidhi samanvay/security office.webp';
+import securityUncleImg from './assets/Vraj nidhi samanvay/security uncle.webp';
+
+// ─── Sports & Events ─────────────────────────────────────────────────────────
+import sportsImg from './assets/Vraj nidhi samanvay/playing cicrket 2.webp';
+import cricketImg from './assets/Vraj nidhi samanvay/playing circket.webp';
+import volleyballImg from './assets/Vraj nidhi samanvay/studnets playing vollyball.webp';
+import holiImg from './assets/Vraj nidhi samanvay/holicelebration.webp';
+
+// ─── Parking ─────────────────────────────────────────────────────────────────
+import parkingImg from './assets/Vraj nidhi samanvay/parking.webp';
+import parking2Img from './assets/Vraj nidhi samanvay/parking part 2.webp';
+
+export {
+  facadeImg, hostelFront10, hostelHeroImg, droneViewImg, hostelFront4,
+  doubleNonAcImg, doubleAcImg, roomsToiletImg, rooms3Img,
+  diningImg, messEntryImg, thaliImg, foodProcessImg, kitchenImg,
+  gardenArea1, gardenArea2, gardenArea3, garden10, gardenTopView, gardenTopView10, gardenImg,
+  lobbyImg, receptionImg,
+  corridorImg, hostelCorridorImg, studyRoomImg,
+  securityOfficeImg, securityUncleImg,
+  sportsImg, cricketImg, volleyballImg, holiImg,
+  parkingImg, parking2Img
+};
+
 
 export const CONTACT_INFO = {
   phone: "+918487045600",
@@ -234,15 +290,4 @@ export const FAQS = [
   }
 ];
 
-// Re-export local images for pages to import them directly
-export {
-  doubleNonAcImg,
-  kitchenImg,
-  diningImg,
-  doubleAcImg,
-  lobbyImg,
-  sportsImg,
-  holiImg,
-  thaliImg,
-  facadeImg
-};
+

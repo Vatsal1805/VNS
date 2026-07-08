@@ -3,15 +3,10 @@ import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
 import { Image, ArrowRight } from 'lucide-react';
 import { 
-  doubleNonAcImg, 
-  doubleAcImg, 
-  facadeImg, 
-  lobbyImg, 
-  sportsImg, 
-  holiImg, 
-  diningImg, 
-  kitchenImg, 
-  thaliImg 
+  doubleNonAcImg, doubleAcImg, facadeImg, hostelHeroImg, droneViewImg,
+  lobbyImg, receptionImg, sportsImg, volleyballImg,
+  holiImg, diningImg, kitchenImg, thaliImg, messEntryImg,
+  gardenArea1, gardenArea2, corridorImg, studyRoomImg, securityOfficeImg
 } from '../../config';
 
 export default function ViewGalleryCTA({ textEntranceVariants }) {
@@ -19,15 +14,24 @@ export default function ViewGalleryCTA({ textEntranceVariants }) {
   const timeoutRef = useRef(null);
 
   const marqueeImages = [
-    { src: doubleNonAcImg, label: "Triple Sharing Room" },
-    { src: doubleAcImg, label: "Double Sharing Room" },
-    { src: facadeImg, label: "Hostel Facade" },
-    { src: lobbyImg, label: "Reception Lobby" },
-    { src: sportsImg, label: "Sports & Recreation" },
-    { src: holiImg, label: "Holi Celebrations" },
+    { src: doubleNonAcImg, label: "Sharing Room" },
     { src: diningImg, label: "Dining Hall" },
-    { src: kitchenImg, label: "Clean Kitchen Area" },
-    { src: thaliImg, label: "Hygienic Vegetarian Thali" },
+    { src: facadeImg, label: "Hostel Exterior" },
+    { src: gardenArea1, label: "Garden Area" },
+    { src: sportsImg, label: "Cricket Grounds" },
+    { src: holiImg, label: "Holi Celebrations" },
+    { src: studyRoomImg, label: "Study Room" },
+    { src: receptionImg, label: "Manager Office" },
+    { src: kitchenImg, label: "Fresh Roti Making" },
+    { src: corridorImg, label: "Hostel Corridor" },
+    { src: hostelHeroImg, label: "VNS Hostel" },
+    { src: thaliImg, label: "Vegetarian Thali" },
+    { src: messEntryImg, label: "Mess Entry" },
+    { src: gardenArea2, label: "Campus Garden" },
+    { src: volleyballImg, label: "Volleyball" },
+    { src: securityOfficeImg, label: "Security Office" },
+    { src: doubleAcImg, label: "Double Sharing Room" },
+    { src: droneViewImg, label: "Aerial View" },
   ];
 
   const handleTouchStart = () => {

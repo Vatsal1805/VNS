@@ -11,7 +11,10 @@ import {
   ShieldCheck,
   Sparkles
 } from 'lucide-react';
-import { lobbyImg, diningImg, sportsImg, kitchenImg, facadeImg, thaliImg } from '../../config';
+import { 
+  lobbyImg, diningImg, sportsImg, kitchenImg, facadeImg, thaliImg,
+  rooms3Img, roomsToiletImg, hostelCorridorImg, studyRoomImg, gardenArea2, receptionImg
+} from '../../config';
 
 export default function RoomsGrid({ 
   roomsData, 
@@ -22,11 +25,11 @@ export default function RoomsGrid({
 
   const selectedRoom = roomsData.find(r => r.id === activeRoomId) || roomsData[0];
 
-  // Map 3 high-quality environment photos for each room type
+  // 3 real photos for each room type
   const roomPhotos = {
-    triple: [selectedRoom.image, lobbyImg, diningImg],
-    double: [selectedRoom.image, kitchenImg, sportsImg],
-    single: [selectedRoom.image, facadeImg, thaliImg]
+    triple: [selectedRoom.image, rooms3Img, hostelCorridorImg],
+    double: [selectedRoom.image, roomsToiletImg, studyRoomImg],
+    single: [selectedRoom.image, gardenArea2, receptionImg]
   };
 
   const currentPhotos = roomPhotos[activeRoomId] || [selectedRoom.image];

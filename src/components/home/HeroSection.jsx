@@ -29,7 +29,7 @@ export default function HeroSection({ facadeImg, handleWhatsAppInquiry }) {
           transition={{ type: "spring", stiffness: 70, damping: 15 }}
           className="text-xs lg:text-sm font-semibold tracking-widest text-vnsAccent uppercase border border-vnsAccent/20 bg-vnsAccent/5 px-4 py-1.5 rounded-full"
         >
-          Premium Student Living
+          Trusted Since 2015
         </motion.span>
 
         {/* Centered Heading */}
@@ -77,7 +77,7 @@ export default function HeroSection({ facadeImg, handleWhatsAppInquiry }) {
           transition={{ type: "spring", stiffness: 50, damping: 14, delay: 0.4 }}
           className="font-body text-sm sm:text-base md:text-lg text-vnsText-secondary max-w-2xl leading-relaxed mt-2"
         >
-          A 12-state family-like campus for dynamic and comfortable student living that helps boys focus on their study and feel at home.
+          A safe, comfortable, and welcoming environment that truly feels like a home away from home — trusted by students and parents for over a decade.
         </motion.p>
 
         {/* CTAs */}

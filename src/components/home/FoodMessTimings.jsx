@@ -27,7 +27,7 @@ export default function FoodMessTimings({
               </h2>
             </div>
             <p className="font-body text-sm text-vnsText-secondary leading-relaxed">
-              Our in-house mess serves delicious, nutritious meals prepared fresh daily. With a focus on hygiene and taste, we ensure every student gets the energy they need to succeed. We source fresh, local ingredients daily and maintain the highest cleanliness standards in our kitchen. From warm breakfast items to healthy, filling dinners, our menu is designed to feel like home cooking while providing balanced nutrition to help students stay active and focused on their studies.
+              Our in-house mess serves nutritious, home-style vegetarian meals prepared fresh every day. We source fresh, local ingredients and maintain the highest cleanliness standards — from warm breakfast to healthy dinners, every meal is designed to feel like home cooking and keep students energised and focused.
             </p>
 
             {/* Time Clocks 2x2 Grid */}

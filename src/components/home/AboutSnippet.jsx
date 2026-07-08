@@ -28,7 +28,7 @@ export default function AboutSnippet({
               </h2>
             </div>
             <p className="font-body text-sm sm:text-base text-vnsText-secondary leading-relaxed">
-              Vraj Nidhi Samanvay (VNS) was constructed specifically to address the daily struggles of students living away from home. We don’t run a converted home; we manage a state-of-the-art facility featuring architectural safety and community warmth.
+              VNS Hostel has become a trusted choice for students and parents seeking quality accommodation. We understand that moving away from home is a significant step, which is why we focus on creating a secure, friendly, and supportive community where students can thrive academically and personally.
             </p>
             
             {/* Core Pillars List */}

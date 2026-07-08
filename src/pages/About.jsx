@@ -1,8 +1,9 @@
 import { useState } from 'react';
-import { CONTACT_INFO, facadeImg, sportsImg, diningImg } from '../config';
-import { CORE_VALUES, ENV_TABS, TARGET_COLLEGES } from '../data/aboutData';
+import { CONTACT_INFO, facadeImg, corridorImg, diningImg, volleyballImg } from '../config';
+import { CORE_VALUES, ENV_TABS, TARGET_COLLEGES, VNS_JOURNEY } from '../data/aboutData';
 import AboutHero from '../components/about/AboutHero';
 import OurMission from '../components/about/OurMission';
+import VnsJourney from '../components/about/VnsJourney';
 import CoreValues from '../components/about/CoreValues';
 import AboutLeadership from '../components/about/AboutLeadership';
 import HostelEnvironment from '../components/about/HostelEnvironment';
@@ -60,7 +61,7 @@ export default function About() {
     }
   };
 
-  const envTabs = ENV_TABS(facadeImg, diningImg, sportsImg);
+  const envTabs = ENV_TABS(corridorImg, diningImg, volleyballImg);
 
   return (
     <div className="overflow-x-hidden bg-vnsBg text-vnsText-primary font-body">
@@ -70,6 +71,9 @@ export default function About() {
 
       {/* 2. OUR MISSION */}
       <OurMission textEntranceVariants={textEntranceVariants} />
+
+      {/* 3. OUR JOURNEY TIMELINE */}
+      <VnsJourney journey={VNS_JOURNEY} />
 
       {/* 3. CORE VALUES */}
       <CoreValues 

@@ -97,7 +97,7 @@ export default function BentoSection({
             <div className="bg-vnsBg border border-vnsBorder rounded-vns p-3 mt-3 shadow-inner flex flex-col gap-2">
               <div className="flex justify-between items-center text-[10px]">
                 <span className="font-body font-bold text-vnsText-primary">Biometric Face Scanner</span>
-                <span className="font-heading font-bold text-emerald-500 uppercase">Active 24/7</span>
+                 <span className="font-heading font-bold text-vnsAccent uppercase">Active 24/7</span>
               </div>
               <div className="h-[1px] bg-vnsBorder"></div>
               <div className="flex justify-between items-center text-[10px]">
@@ -127,8 +127,8 @@ export default function BentoSection({
             {/* Value Lists */}
             <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-3">
               <div>
-                <h4 className="font-heading text-[10px] font-bold text-emerald-400 uppercase tracking-wider border-b border-vnsBorder/40 pb-1 flex items-center gap-1.5">
-                  <Check className="w-3.5 h-3.5" />
+                <h4 className="font-heading text-[10px] font-bold text-vnsAccent uppercase tracking-wider border-b border-vnsBorder/40 pb-1 flex items-center gap-1.5">
+                  <Check className="w-3.5 h-3.5 text-vnsAccent" />
                   Included in Rent
                 </h4>
                 <ul className="flex flex-col gap-1.5 mt-2 text-[10px] text-vnsText-secondary font-body">

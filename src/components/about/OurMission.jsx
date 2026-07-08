@@ -6,19 +6,19 @@ export default function OurMission({ textEntranceVariants }) {
     {
       num: "01",
       title: "Academic Sanctuary",
-      desc: "We provide designated quiet study spaces, high-speed internet, and strict curfew hours to ensure students can concentrate on their academics without distractions.",
+      desc: "Dedicated quiet study rooms, high-speed Wi-Fi, and a strict curfew environment — every detail is managed to ensure students can focus on their academics without distractions.",
       isDark: false
     },
     {
       num: "02",
       title: "Shield of Protection",
-      desc: "24/7 on-site resident warden support, secure biometric gate entry, CCTV surveillance, and strict visitor rules to guarantee complete peace of mind for parents.",
+      desc: "24/7 on-site security, biometric gate entry, CCTV surveillance, and strict visitor management to guarantee complete safety — giving parents full peace of mind.",
       isDark: true
     },
     {
       num: "03",
       title: "Family-Like Bond",
-      desc: "A warm, nurturing environment where students live as a family, celebrate festivals, share nutritious food, and build lifelong friendships.",
+      desc: "A warm, nurturing hostel community where students celebrate festivals, share nutritious meals, build lifelong friendships, and develop independence far from home.",
       isDark: false
     }
   ];
@@ -46,7 +46,7 @@ export default function OurMission({ textEntranceVariants }) {
           </h2>
           <div className="h-[2px] w-12 bg-vnsAccent mx-auto mt-2"></div>
           <p className="font-body text-sm text-vnsDark/85 leading-relaxed max-w-xl mx-auto mt-3">
-            We bridge the gap between home and university, creating a distraction-free environment for focus, growth, and security.
+            To provide a safe, comfortable, and inspiring living environment that empowers students to focus on their education, achieve their goals, and enjoy a memorable hostel experience.
           </p>
         </motion.div>
 
