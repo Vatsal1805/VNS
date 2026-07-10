@@ -12,6 +12,8 @@ import doubleNonAcImg from './assets/Vraj nidhi samanvay/Rooms.webp';
 import doubleAcImg from './assets/Vraj nidhi samanvay/rooms_2.webp';
 import roomsToiletImg from './assets/Vraj nidhi samanvay/rooms_toilet.webp';
 import rooms3Img from './assets/Vraj nidhi samanvay/rooms 3.webp';
+import tripleSharingRoomImg from './assets/Vraj nidhi samanvay/triple sharing room.webp';
+import doubleSharingRoomImg from './assets/Vraj nidhi samanvay/double sharing room.webp';
 
 // ─── Mess & Food ─────────────────────────────────────────────────────────────
 import diningImg from './assets/Vraj nidhi samanvay/Mess_dinning  hall.webp';
@@ -37,6 +39,7 @@ import receptionImg from './assets/Vraj nidhi samanvay/reception office or manag
 import corridorImg from './assets/Vraj nidhi samanvay/coridor area 1.0.webp';
 import hostelCorridorImg from './assets/Vraj nidhi samanvay/hostel coridor area.webp';
 import studyRoomImg from './assets/Vraj nidhi samanvay/study room.webp';
+import hostelCleaningImg from './assets/Vraj nidhi samanvay/hostel_cleaning.webp';
 
 // ─── Security ────────────────────────────────────────────────────────────────
 import securityOfficeImg from './assets/Vraj nidhi samanvay/security office.webp';
@@ -54,11 +57,11 @@ import parking2Img from './assets/Vraj nidhi samanvay/parking part 2.webp';
 
 export {
   facadeImg, hostelFront10, hostelHeroImg, droneViewImg, hostelFront4,
-  doubleNonAcImg, doubleAcImg, roomsToiletImg, rooms3Img,
+  doubleNonAcImg, doubleAcImg, roomsToiletImg, rooms3Img, tripleSharingRoomImg, doubleSharingRoomImg,
   diningImg, messEntryImg, thaliImg, foodProcessImg, kitchenImg,
   gardenArea1, gardenArea2, gardenArea3, garden10, gardenTopView, gardenTopView10, gardenImg,
   lobbyImg, receptionImg,
-  corridorImg, hostelCorridorImg, studyRoomImg,
+  corridorImg, hostelCorridorImg, studyRoomImg, hostelCleaningImg,
   securityOfficeImg, securityUncleImg,
   sportsImg, cricketImg, volleyballImg, holiImg,
   parkingImg, parking2Img
@@ -95,7 +98,7 @@ export const ROOMS_DATA = [
       "High-speed WiFi Access",
       "Individual AC Control"
     ],
-    image: doubleNonAcImg,
+    image: tripleSharingRoomImg,
     description: "Shared living at its best. Spacious room layout with individual workspaces and private lockable cabinets for all three residents."
   },
   {
@@ -112,7 +115,7 @@ export const ROOMS_DATA = [
       "High-speed WiFi Access",
       "Individual AC Control"
     ],
-    image: doubleAcImg,
+    image: doubleSharingRoomImg,
     description: "The ideal balance of social life and privacy. Dual-sharing space offering comfortable breathing room and high-quality utility access."
   },
   {
@@ -129,7 +132,7 @@ export const ROOMS_DATA = [
       "High-speed WiFi Access",
       "Individual AC Control"
     ],
-    image: doubleAcImg,
+    image: doubleNonAcImg,
     description: "Perfect for students seeking absolute quiet and intense study focus. Enjoy your personal room with full independent amenities."
   }
 ];

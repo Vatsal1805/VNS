@@ -21,7 +21,7 @@ export default function AboutCTA({ contactInfo }) {
           transition={{ type: "spring", stiffness: 50, damping: 15, delay: 0.1 }}
           className="font-body text-xs sm:text-sm text-vnsText-secondary leading-relaxed"
         >
-          Witness the secure gates, hygienic dining facilities, and peaceful room settings first-hand. Call Warden Uncle to schedule your visit.
+          Witness the secure gates, hygienic dining facilities, and peaceful room settings first-hand. Call the Hostel Manager to schedule your visit.
         </motion.p>
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
@@ -44,7 +44,7 @@ export default function AboutCTA({ contactInfo }) {
             className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent hover:bg-vnsBg/30 text-vnsText-primary px-8 py-3.5 rounded-vns border border-vnsText-primary/20 transition-colors"
           >
             <Phone className="w-4 h-4 text-vnsAccent" />
-            <span className="font-heading text-sm font-semibold tracking-wider uppercase">Call Warden Uncle</span>
+            <span className="font-heading text-sm font-semibold tracking-wider uppercase">Call Hostel Manager</span>
           </a>
         </motion.div>
       </div>

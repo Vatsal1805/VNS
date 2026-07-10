@@ -3,7 +3,6 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { 
   ChevronLeft, 
   ChevronRight, 
-  MessageCircle, 
   Bed, 
   BookOpen, 
   Lock, 
@@ -11,9 +10,11 @@ import {
   ShieldCheck,
   Sparkles
 } from 'lucide-react';
+import WhatsAppIcon from '../WhatsAppIcon';
 import { 
   lobbyImg, diningImg, sportsImg, kitchenImg, facadeImg, thaliImg,
-  rooms3Img, roomsToiletImg, hostelCorridorImg, studyRoomImg, gardenArea2, receptionImg
+  rooms3Img, roomsToiletImg, hostelCorridorImg, studyRoomImg, gardenArea2, receptionImg,
+  corridorImg, hostelCleaningImg
 } from '../../config';
 
 export default function RoomsGrid({ 
@@ -27,9 +28,9 @@ export default function RoomsGrid({
 
   // 3 real photos for each room type
   const roomPhotos = {
-    triple: [selectedRoom.image, rooms3Img, hostelCorridorImg],
-    double: [selectedRoom.image, roomsToiletImg, studyRoomImg],
-    single: [selectedRoom.image, gardenArea2, receptionImg]
+    triple: [selectedRoom.image, roomsToiletImg, hostelCleaningImg],
+    double: [selectedRoom.image, roomsToiletImg, hostelCorridorImg],
+    single: [selectedRoom.image, roomsToiletImg, corridorImg]
   };
 
   const currentPhotos = roomPhotos[activeRoomId] || [selectedRoom.image];
@@ -257,7 +258,7 @@ export default function RoomsGrid({
                   onClick={() => handleWhatsAppInquiry(selectedRoom.name)}
                   className="w-full sm:w-auto self-start flex items-center justify-center gap-2 bg-gradient-to-r from-vnsAccent to-[#D4A853] hover:from-[#C9933A] hover:to-[#B6842F] text-vnsBg px-8 py-3.5 rounded-vns font-heading text-xs font-semibold uppercase tracking-wider transition-all duration-300 shadow-md hover:scale-[1.01]"
                 >
-                  <MessageCircle className="w-4 h-4 text-vnsBg fill-current" />
+                  <WhatsAppIcon className="w-4 h-4 text-vnsBg fill-current" />
                   <span>Inquire Room Availability</span>
                 </button>
               </div>

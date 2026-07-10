@@ -3,7 +3,7 @@ export const VNS_JOURNEY = [
     year: "2015",
     label: "The Beginning",
     desc: "VNS Hostel was established with a mission to redefine student accommodation — offering a safe, comfortable, and professionally managed living space for students near Parul University and Sumandeep Vidyapeeth.",
-    highlight: true
+    highlight: false
   },
   {
     year: "2016 – 2018",
@@ -27,14 +27,14 @@ export const VNS_JOURNEY = [
     year: "Today",
     label: "Still Growing",
     desc: "More than a decade after our journey began, VNS Hostel continues to grow with the same passion and commitment. We remain dedicated to providing a safe, modern, and student-focused living environment where every resident feels valued, supported, and at home.",
-    highlight: true
+    highlight: false
   }
 ];
 
 export const CORE_VALUES = [
   {
     title: "Absolute Safety",
-    desc: "Gate access logs, 24/7 CCTV monitoring, and strict 10:00 PM curfew managed by on-site warden.",
+    desc: "Gate access logs, 24/7 CCTV monitoring, and strict 10:00 PM curfew managed by on-site manager.",
     icon: "Shield"
   },
   {
@@ -56,16 +56,16 @@ export const CORE_VALUES = [
 
 export const ENV_TABS = (corridorImg, diningImg, volleyballImg) => [
   {
-    title: "Cooler Interiors",
-    desc: "Built with 10ft+ high ceilings that allow hot air to rise, keeping rooms naturally cooler. Wide corridors and ventilated passageways ensure comfortable airflow across all floors.",
+    title: "Spacious Corridors & Rooms",
+    desc: "Enjoy spacious rooms featuring 10ft+ high ceilings that allow hot air to rise, keeping living spaces naturally cooler. Wide, airy corridors and ventilated passageways ensure comfortable airflow across all floors.",
     image: corridorImg,
     badge: "Smart Architecture"
   },
   {
-    title: "Hygienic RO Grid",
-    desc: "Centralized commercial RO filtration plants installed on every floor, tested monthly for absolute purity. Students have access to clean, cold drinking water 24/7.",
+    title: "Hygienic Food & RO Water",
+    desc: "Our in-house mess serves nutritious, fresh vegetarian meals prepared with high-grade RO water. Industrial-grade RO filtration plants on every floor are tested monthly to guarantee 24/7 access to clean, pure drinking water.",
     image: diningImg,
-    badge: "Pure Drinking Water"
+    badge: "Nutritious & Pure"
   },
   {
     title: "Sports & Recreation",
@@ -76,9 +76,9 @@ export const ENV_TABS = (corridorImg, diningImg, volleyballImg) => [
 ];
 
 export const TARGET_COLLEGES = [
-  { name: "Parul University", distance: "2 Km away", icon: "GraduationCap" },
-  { name: "Sumandeep Vidyapeeth", distance: "2 Km away", icon: "School" },
-  { name: "Dhiraj Hospital Interns", distance: "2 Km away", icon: "HeartPulse" },
-  { name: "Waghodia Road Colleges", distance: "Nearby Area", icon: "Bus" }
+  { name: "College Students", distance: "Parul, Sumandeep & Waghodia Colleges", icon: "GraduationCap" },
+  { name: "Medical Interns", distance: "Dhiraj Hospital & local clinics", icon: "Stethoscope" },
+  { name: "Resident Doctors", distance: "Postgraduates & practitioners", icon: "HeartPulse" },
+  { name: "Teachers & Staff", distance: "Coaching faculty & college professors", icon: "BookOpen" }
 ];
 

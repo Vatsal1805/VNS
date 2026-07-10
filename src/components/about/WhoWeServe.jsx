@@ -18,7 +18,7 @@ export default function WhoWeServe({
           variants={textEntranceVariants}
           className="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-2"
         >
-          <span className="font-heading text-xs font-semibold uppercase tracking-widest text-vnsDark/60">Our Commute Scope</span>
+          <span className="font-heading text-xs font-semibold uppercase tracking-widest text-vnsDark/60">Target Residents</span>
           <h2 className="font-heading text-3xl sm:text-4xl font-bold uppercase tracking-tight text-vnsDark">
             Who We Serve
           </h2>

@@ -7,7 +7,7 @@ export default function BentoSection({
   valueInclusions 
 }) {
   return (
-    <section className="py-20 bg-vnsLight text-vnsDark border-t border-vnsDark/10">
+    <section className="pt-20 pb-8 bg-vnsLight text-vnsDark border-t border-vnsDark/10">
       <div className="max-width-container mx-auto px-5 lg:px-12">
         {/* Header */}
         <div className="text-center max-w-2xl mx-auto mb-16 flex flex-col gap-2">

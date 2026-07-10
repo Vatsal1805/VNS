@@ -9,7 +9,7 @@ export default function LifeAtVns({
   communityHighlights 
 }) {
   return (
-    <section id="life-at-vns" className="py-20 bg-vnsLight text-vnsDark scroll-mt-20">
+    <section id="life-at-vns" className="pt-8 pb-20 bg-vnsLight text-vnsDark scroll-mt-20">
       <div className="max-width-container mx-auto px-5 lg:px-12 flex flex-col gap-12">
         
         {/* Row 1: Text on Left, Horizontal Lobby Image on Right */}

@@ -175,7 +175,7 @@ export default function WhatsAppWizard({
               <div className="flex flex-col gap-5">
                 <div className="border-b border-vnsBorder pb-4">
                   <h3 className="font-heading font-bold text-xl uppercase tracking-wider text-vnsText-primary">Direct Contact</h3>
-                  <p className="font-body text-[10px] text-vnsAccent font-semibold uppercase tracking-wider mt-0.5">Warden Uncle Office</p>
+                  <p className="font-body text-[10px] text-vnsAccent font-semibold uppercase tracking-wider mt-0.5">Hostel Manager Office</p>
                 </div>
 
                 <div className="flex flex-col gap-4">
@@ -184,8 +184,8 @@ export default function WhatsAppWizard({
                       <User className="w-4 h-4 text-vnsAccent" />
                     </div>
                     <div>
-                      <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-vnsAccent">Resident Warden</h4>
-                      <p className="font-body text-xs text-vnsText-secondary mt-0.5">Mr. Patel (Warden Uncle)</p>
+                      <h4 className="font-heading font-bold text-xs uppercase tracking-wider text-vnsAccent">Hostel Manager</h4>
+                      <p className="font-body text-xs text-vnsText-secondary mt-0.5">Pratik Patel (Hostel Manager)</p>
                     </div>
                   </div>
 
@@ -219,7 +219,7 @@ export default function WhatsAppWizard({
                   className="w-full flex items-center justify-center gap-2 bg-gradient-to-r from-vnsAccent to-[#D4A853] hover:from-[#C9933A] hover:to-[#B6842F] text-vnsBg py-3.5 rounded-vns font-heading text-xs font-semibold uppercase tracking-wider active:scale-95 transition-all shadow-md"
                 >
                   <Phone className="w-4 h-4 text-vnsBg fill-current" />
-                  <span>Call Warden Uncle</span>
+                  <span>Call Hostel Manager</span>
                 </a>
                 <p className="font-body text-[9px] text-vnsText-secondary text-center uppercase tracking-widest mt-1">
                    Office Hours: 8:00 AM - 10:00 PM

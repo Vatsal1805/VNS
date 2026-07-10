@@ -35,7 +35,7 @@ export default function StayCTA({
               className="w-full sm:w-auto flex items-center justify-center gap-2 bg-transparent hover:bg-vnsBg/30 text-vnsText-primary px-8 py-3.5 rounded-vns border border-vnsText-primary/20 transition-colors uppercase font-heading text-sm font-semibold tracking-wider"
             >
               <Phone className="w-4 h-4 text-vnsAccent" />
-              <span>Call Warden Uncle</span>
+              <span>Call Hostel Manager</span>
             </a>
           </div>
           <p className="font-body text-[10px] text-vnsAccent uppercase tracking-widest mt-2 flex items-center justify-center gap-1.5 animate-pulse font-semibold">

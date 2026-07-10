@@ -5,7 +5,6 @@ import AboutHero from '../components/about/AboutHero';
 import OurMission from '../components/about/OurMission';
 import VnsJourney from '../components/about/VnsJourney';
 import CoreValues from '../components/about/CoreValues';
-import AboutLeadership from '../components/about/AboutLeadership';
 import HostelEnvironment from '../components/about/HostelEnvironment';
 import WhoWeServe from '../components/about/WhoWeServe';
 import AboutCTA from '../components/about/AboutCTA';
@@ -83,12 +82,7 @@ export default function About() {
         textEntranceVariants={textEntranceVariants}
       />
 
-      {/* 3. MANAGEMENT & CARE */}
-      <AboutLeadership 
-        leftSlideVariants={leftSlideVariants}
-        rightSlideVariants={rightSlideVariants}
-        textEntranceVariants={textEntranceVariants}
-      />
+
 
       {/* 4. OUR HOSTEL ENVIRONMENT */}
       <HostelEnvironment 

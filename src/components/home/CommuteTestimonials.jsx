@@ -12,7 +12,6 @@ export default function CommuteTestimonials({
   leftSlideVariants, 
   rightSlideVariants 
 }) {
-  const [activeLandmarkIndex, setActiveLandmarkIndex] = useState(0);
   const [currentReviewIndex, setCurrentReviewIndex] = useState(0);
 
   useEffect(() => {
@@ -76,23 +75,20 @@ export default function CommuteTestimonials({
             className="grid grid-cols-2 gap-4"
           >
             {commuteLandmarks.map((landmark) => {
-              const isSelected = activeLandmarkIndex === landmark.index;
               return (
-                <button
+                <div
                   key={landmark.index}
-                  onClick={() => setActiveLandmarkIndex(landmark.index)}
-                  className={`text-left p-5 rounded-vns border flex flex-col gap-3 transition-all duration-200 shadow-sm ${
-                    isSelected
-                      ? 'bg-vnsText-primary border-vnsDark bg-vnsText-primary/90 shadow-md translate-y-[-2px]'
-                      : 'bg-vnsText-primary/60 border-vnsDark/10 hover:border-vnsDark/20 hover:bg-vnsText-primary/80'
-                  }`}
+                  className="group p-5 rounded-vns border border-vnsDark/10 bg-vnsText-primary/60 flex flex-col gap-3 transition-all duration-200 shadow-sm hover:border-vnsDark hover:bg-vnsText-primary/80 hover:translate-y-[-2px] hover:shadow-md cursor-default select-none"
                 >
-                  <DynamicIcon name={landmark.icon} className={`w-6 h-6 ${isSelected ? 'text-vnsDark' : 'text-vnsDark/60'}`} />
+                  <DynamicIcon 
+                    name={landmark.icon} 
+                    className="w-6 h-6 text-vnsDark/60 group-hover:text-vnsDark transition-colors duration-200" 
+                  />
                   <div>
                     <h4 className="font-heading font-bold text-sm text-vnsDark leading-tight">{landmark.name}</h4>
                     <p className="font-body text-xs text-vnsDark/60 mt-1 font-semibold">{landmark.distance}</p>
                   </div>
-                </button>
+                </div>
               );
             })}
           </motion.div>

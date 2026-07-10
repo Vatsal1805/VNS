@@ -38,7 +38,7 @@ export default function CoreValues({
               key={idx}
               variants={itemVariants}
               whileHover={{ y: -8, scale: 1.02, boxShadow: "0 20px 25px -5px rgba(53, 28, 14, 0.10)" }}
-              className="bg-white border border-vnsDark/10 rounded-vns p-5 md:p-6 flex flex-col gap-3 group hover:border-vnsAccent/40 transition-all shadow-sm cursor-default"
+              className="bg-vnsText-primary border border-vnsDark/10 rounded-vns p-5 md:p-6 flex flex-col gap-3 group hover:border-vnsAccent/40 transition-all shadow-sm cursor-default"
             >
               <div className="w-8 h-8 md:w-10 md:h-10 rounded-vns bg-vnsLight border border-vnsDark/10 flex items-center justify-center text-vnsDark group-hover:text-vnsAccent group-hover:border-vnsAccent/30 group-hover:rotate-6 transition-all shrink-0">
                 <DynamicIcon name={value.icon} className="w-4 h-4 md:w-5 md:h-5" />
