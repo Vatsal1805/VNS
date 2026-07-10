@@ -1,6 +1,39 @@
 import { motion } from 'framer-motion';
 import { Link } from 'react-router-dom';
-import { Check, ArrowRight, MessageCircle } from 'lucide-react';
+import { 
+  ArrowRight,
+  Bed,
+  BookOpen,
+  User,
+  Lock,
+  Wifi,
+  Snowflake,
+  Check
+} from 'lucide-react';
+import WhatsAppIcon from '../WhatsAppIcon';
+
+const getFeatureIcon = (featureName) => {
+  const name = featureName.toLowerCase();
+  if (name.includes('wifi') || name.includes('internet')) {
+    return <Wifi className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  if (name.includes('desk') || name.includes('study') || name.includes('chair') || name.includes('workplace') || name.includes('furniture')) {
+    return <BookOpen className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  if (name.includes('bathroom') || name.includes('washroom') || name.includes('toilet') || name.includes('bath')) {
+    return <User className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  if (name.includes('ac') || name.includes('air conditioning') || name.includes('cooling')) {
+    return <Snowflake className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  if (name.includes('locker') || name.includes('wardrobe') || name.includes('storage') || name.includes('cabinet')) {
+    return <Lock className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  if (name.includes('mattress') || name.includes('bed')) {
+    return <Bed className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+  }
+  return <Check className="w-3.5 h-3.5 text-vnsAccent shrink-0" />;
+};
 
 export default function RoomsPreview({ 
   roomsData, 
@@ -66,7 +99,7 @@ export default function RoomsPreview({
                 <ul className="flex flex-col gap-2 my-2">
                   {room.features.slice(0, 4).map((feat, idx) => (
                     <li key={idx} className="flex gap-2 items-center text-xs text-vnsText-secondary">
-                      <Check className="w-3.5 h-3.5 text-vnsAccent shrink-0" />
+                      {getFeatureIcon(feat)}
                       <span>{feat}</span>
                     </li>
                   ))}
@@ -77,7 +110,7 @@ export default function RoomsPreview({
                   onClick={() => handleWhatsAppInquiry(room.name)}
                   className="w-full flex items-center justify-center gap-2 bg-vnsBg hover:bg-vnsCardHover text-vnsText-primary py-3 rounded-vns border border-vnsBorder hover:border-vnsAccent transition-all duration-300"
                 >
-                  <MessageCircle className="w-4 h-4 text-vnsAccent fill-current" />
+                  <WhatsAppIcon className="w-4 h-4 text-vnsAccent fill-current" />
                   <span className="font-heading text-xs font-semibold uppercase tracking-wider">Inquire Now</span>
                 </button>
               </div>

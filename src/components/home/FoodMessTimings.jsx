@@ -66,11 +66,11 @@ export default function FoodMessTimings({
             </div>
 
             {/* Thali Image */}
-            <div className="relative rounded-vns overflow-hidden border border-vnsBorder/40 shadow-xl h-[360px] group">
+            <div className="relative rounded-vns overflow-hidden border border-vnsBorder/40 shadow-xl h-[360px] group bg-vnsBg">
               <img 
                 src={thaliImg} 
                 alt="Hygienic Vegetarian Hostel Meals" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                className="w-full h-full object-cover scale-[1.02] group-hover:scale-105 transition-transform duration-500"
               />
               {/* Overlay badge */}
               <div className="absolute top-4 right-4 bg-vnsBg/90 backdrop-blur-sm px-4 py-2 border border-vnsAccent/30 rounded-vns text-xs text-vnsText-primary">

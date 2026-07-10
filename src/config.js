@@ -92,10 +92,10 @@ export const ROOMS_DATA = [
     features: [
       "Comfort Mattress",
       "Private Study Desk",
-      "Ergonomic Chair",
+      "High-speed WiFi Access",
       "Attached Bathroom",
       "Dedicated Steel Locker",
-      "High-speed WiFi Access",
+      
       "Individual AC Control"
     ],
     image: tripleSharingRoomImg,
@@ -109,10 +109,10 @@ export const ROOMS_DATA = [
     features: [
       "Comfort Mattress",
       "Private Study Desk",
-      "Ergonomic Chair",
+       "High-speed WiFi Access",
       "Attached Bathroom",
       "Dedicated Steel Locker",
-      "High-speed WiFi Access",
+     
       "Individual AC Control"
     ],
     image: doubleSharingRoomImg,
@@ -126,11 +126,12 @@ export const ROOMS_DATA = [
     features: [
       "Comfort Mattress",
       "Executive Study Desk",
-      "Ergonomic Chair",
+      "Individual AC Control",
+       "High-speed WiFi Access",
       "Attached Bathroom",
       "Double Steel Wardrobe",
       "High-speed WiFi Access",
-      "Individual AC Control"
+      
     ],
     image: doubleNonAcImg,
     description: "Perfect for students seeking absolute quiet and intense study focus. Enjoy your personal room with full independent amenities."

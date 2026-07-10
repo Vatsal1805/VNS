@@ -5,7 +5,8 @@ import {
   facadeImg, hostelFront10, hostelHeroImg, droneViewImg, hostelFront4,
   lobbyImg, receptionImg, corridorImg, hostelCorridorImg, studyRoomImg,
   gardenArea1, gardenArea2, gardenArea3, garden10, gardenTopView, gardenTopView10, gardenImg,
-  securityOfficeImg, securityUncleImg, parkingImg, parking2Img
+  securityOfficeImg, securityUncleImg, parkingImg, parking2Img,tripleSharingRoomImg,doubleSharingRoomImg,
+  hostelCleaningImg
 } from '../config';
 
 export const GALLERY_PHOTOS = [
@@ -22,7 +23,7 @@ export const GALLERY_PHOTOS = [
     category: "rooms",
     title: "Double Sharing Room",
     desc: "Spacious double sharing layout with individual workspaces and balcony access.",
-    url: doubleAcImg
+    url: doubleSharingRoomImg
   },
   {
     id: 3,
@@ -36,7 +37,7 @@ export const GALLERY_PHOTOS = [
     category: "rooms",
     title: "Cosy Room Interior",
     desc: "Natural light-filled room setup providing a comfortable living environment.",
-    url: rooms3Img
+    url: tripleSharingRoomImg
   },
   {
     id: 5,
@@ -116,10 +117,10 @@ export const GALLERY_PHOTOS = [
   // ─── Campus & Garden ───────────────────────────────────────────────────────
   {
     id: 15,
-    category: "campus",
-    title: "Hostel Front View",
-    desc: "Modern multi-storey hostel building with clean exterior and ventilation.",
-    url: facadeImg
+    category: "rooms",
+    title: "Daily Housekeeping",
+    desc: "Hygienic daily cleaning and housekeeping to maintain clean corridors and rooms.",
+    url: hostelCleaningImg
   },
   {
     id: 16,
