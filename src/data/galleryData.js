@@ -1,7 +1,7 @@
 import { 
   doubleNonAcImg, doubleAcImg, roomsToiletImg, rooms3Img,
   diningImg, messEntryImg, thaliImg, foodProcessImg, kitchenImg,
-  holiImg, sportsImg, cricketImg, volleyballImg,
+  holiImg, sportsImg, cricketImg, volleyballImg, ganpatiImg,
   facadeImg, hostelFront10, hostelHeroImg, droneViewImg, hostelFront4,
   lobbyImg, receptionImg, corridorImg, hostelCorridorImg, studyRoomImg,
   gardenArea1, gardenArea2, gardenArea3, garden10, gardenTopView, gardenTopView10, gardenImg,
@@ -85,6 +85,13 @@ export const GALLERY_PHOTOS = [
   },
 
   // ─── Festivals & Sports ────────────────────────────────────────────────────
+  {
+    id: 35,
+    category: "festivals",
+    title: "Ganpati Celebration",
+    desc: "Grand Ganesh Utsav celebration with students and staff on the hostel campus.",
+    url: ganpatiImg
+  },
   {
     id: 11,
     category: "festivals",

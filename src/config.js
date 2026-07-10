@@ -50,6 +50,7 @@ import sportsImg from './assets/Vraj nidhi samanvay/playing cicrket 2.webp';
 import cricketImg from './assets/Vraj nidhi samanvay/playing circket.webp';
 import volleyballImg from './assets/Vraj nidhi samanvay/studnets playing vollyball.webp';
 import holiImg from './assets/Vraj nidhi samanvay/holicelebration.webp';
+import ganpatiImg from './assets/Vraj nidhi samanvay/ganpati_celebration.webp';
 
 // ─── Parking ─────────────────────────────────────────────────────────────────
 import parkingImg from './assets/Vraj nidhi samanvay/parking.webp';
@@ -63,17 +64,18 @@ export {
   lobbyImg, receptionImg,
   corridorImg, hostelCorridorImg, studyRoomImg, hostelCleaningImg,
   securityOfficeImg, securityUncleImg,
-  sportsImg, cricketImg, volleyballImg, holiImg,
+  sportsImg, cricketImg, volleyballImg, holiImg, ganpatiImg,
   parkingImg, parking2Img
 };
 
 
 export const CONTACT_INFO = {
-  phone: "+918487045600",
-  phoneFormatted: "+91 84870 45600",
+  phone: "+919409117158",
+  phoneFormatted: "+91 94091 17158",
+  phoneLabel: "Pratik Patel",
   whatsapp: "+918487045600",
   whatsappFormatted: "+91 84870 45600",
-  email: "info@vnshostel.com",
+  email: "vnshostel15@gmail.com",
   address: "Alwa Road, opp. Vadpadraka Hotel & Resort, between Sumandeep and Parul University, Dattapura, Waghodia Rd, Vadodara, Gujarat 391760",
   googleMapsLink: "https://www.google.com/maps/search/?api=1&query=VNS+Boys+Hostel+Waghodia+Road+Vadodara+Gujarat+391760",
 };

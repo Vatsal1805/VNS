@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { Phone, Mail, MapPin, ExternalLink } from 'lucide-react';
+import { Phone, Mail, MapPin, ExternalLink, MessageCircle } from 'lucide-react';
 import { CONTACT_INFO } from '../config';
 import logoImg from '../assets/logo.png';
 
@@ -70,9 +70,20 @@ export default function Footer() {
               <span className="leading-relaxed text-xs">{CONTACT_INFO.address}</span>
             </li>
             <li className="flex gap-3 items-center">
-              <Phone className="w-4 h-4 text-vnsAccent" />
+              <Phone className="w-4 h-4 text-vnsAccent shrink-0" />
               <a href={`tel:${CONTACT_INFO.phone}`} className="hover:text-vnsAccent transition-colors">
-                {CONTACT_INFO.phoneFormatted}
+                {CONTACT_INFO.phoneFormatted} <span className="text-xs text-vnsText-secondary/70">({CONTACT_INFO.phoneLabel})</span>
+              </a>
+            </li>
+            <li className="flex gap-3 items-center">
+              <MessageCircle className="w-4 h-4 text-vnsAccent shrink-0" />
+              <a
+                href={`https://wa.me/${CONTACT_INFO.whatsapp}`}
+                target="_blank"
+                rel="noreferrer"
+                className="hover:text-vnsAccent transition-colors"
+              >
+                {CONTACT_INFO.whatsappFormatted} <span className="text-xs text-vnsText-secondary/70">(WhatsApp)</span>
               </a>
             </li>
             <li className="flex gap-3 items-center">
