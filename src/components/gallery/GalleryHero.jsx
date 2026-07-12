@@ -5,11 +5,9 @@ export default function GalleryHero({ facadeImg }) {
     <section className="relative min-h-[65vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       {/* Cinematic Ken Burns Background Zoom */}
       <div className="absolute inset-0 z-0">
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center hero-bg-enhanced"
-          style={{ backgroundImage: `url(${facadeImg})` }}
-          animate={{ scale: [1, 1.06] }}
-          transition={{ duration: 16, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        <div 
+          className="absolute inset-0 bg-cover bg-[center_30%] hero-bg-enhanced"
+          style={{ backgroundImage: `url("${facadeImg}")` }}
         />
         {/* Dark overlay and gradient overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-vnsBg via-vnsBg/50 to-transparent"></div>

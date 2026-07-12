@@ -136,13 +136,13 @@ export const GALLERY_PHOTOS = [
     desc: "VNS Boys Hostel — a purpose-built student accommodation facility.",
     url: hostelFront10
   },
-  {
-    id: 17,
-    category: "campus",
-    title: "Hostel Hero View",
-    desc: "The iconic front view of VNS Boys Hostel on Waghodia Road.",
-    url: hostelHeroImg
-  },
+  // {
+  //   id: 17,
+  //   category: "campus",
+  //   title: "Hostel Hero View",
+  //   desc: "The iconic front view of VNS Boys Hostel on Waghodia Road.",
+  //   url: hostelHeroImg
+  // },
   {
     id: 18,
     category: "campus",

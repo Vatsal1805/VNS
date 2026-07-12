@@ -4,11 +4,9 @@ export default function RoomsHero({ facadeImg }) {
   return (
     <section className="relative min-h-[65vh] flex items-center justify-center pt-28 pb-16 overflow-hidden">
       <div className="absolute inset-0 z-0">
-        <motion.div 
-          className="absolute inset-0 bg-cover bg-center hero-bg-enhanced"
-          style={{ backgroundImage: `url(${facadeImg})` }}
-          animate={{ scale: [1, 1.05] }}
-          transition={{ duration: 15, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
+        <div 
+          className="absolute inset-0 bg-cover bg-[center_30%] hero-bg-enhanced"
+          style={{ backgroundImage: `url("${facadeImg}")` }}
         />
         <div className="absolute inset-0 bg-gradient-to-t from-vnsBg via-vnsBg/50 to-transparent"></div>
         <div className="absolute inset-0 bg-vnsBg/45"></div>

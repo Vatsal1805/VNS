@@ -24,7 +24,7 @@ export default function ViewGalleryCTA({ textEntranceVariants }) {
     { src: receptionImg, label: "Manager Office" },
     { src: kitchenImg, label: "Fresh Roti Making" },
     { src: corridorImg, label: "Hostel Corridor" },
-    { src: hostelHeroImg, label: "VNS Hostel" },
+    // { src: hostelHeroImg, label: "VNS Hostel" },
     { src: thaliImg, label: "Vegetarian Thali" },
     { src: messEntryImg, label: "Mess Entry" },
     { src: gardenArea2, label: "Campus Garden" },

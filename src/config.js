@@ -1,10 +1,10 @@
 // Configuration file for VNS Boys Hostel content and settings
 
 // ─── Hero & Facade ──────────────────────────────────────────────────────────
-import facadeImg from './assets/Vraj nidhi samanvay/hostel hero.webp';
+import facadeImg from './assets/Vraj nidhi samanvay/hostel_hero_3.webp';
 import hostelFront10 from './assets/Vraj nidhi samanvay/hostel front 1.0.webp';
-import hostelHeroImg from './assets/Vraj nidhi samanvay/hostel hero.webp';
-import droneViewImg from './assets/Vraj nidhi samanvay/hostel view from drone(height).webp';
+import hostelHeroImg from './assets/Vraj nidhi samanvay/hostel_hero_3.webp';
+import droneViewImg from './assets/Vraj nidhi samanvay/hostel view from drone height.webp';
 import hostelFront4 from './assets/Vraj nidhi samanvay/hostel front 4.webp';
 
 // ─── Rooms ───────────────────────────────────────────────────────────────────

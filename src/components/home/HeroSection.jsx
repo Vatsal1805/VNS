@@ -10,8 +10,8 @@ export default function HeroSection({ facadeImg, handleWhatsAppInquiry }) {
       <div className="absolute inset-0 z-0">
         <motion.div 
           className="absolute inset-0 bg-cover bg-center hero-bg-enhanced"
-          style={{ backgroundImage: `url(${facadeImg})` }}
-          animate={{ scale: [1, 1.05] }}
+          style={{ backgroundImage: `url("${facadeImg}")` }}
+          animate={{ scale: [1, 1.06] }}
           transition={{ duration: 15, repeat: Infinity, repeatType: "reverse", ease: "easeInOut" }}
         />
         {/* Dark overlay with lower opacity to show the building background clearly and support future video */}
